@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:visited {
+            color: rgb(233, 10, 10);
+        }
+
+        a:hover {
+            color: rgb(210, 226, 210);
+            background-color: black;
+        }
+
+        .input-focus:focus {
+            color: aqua;
+        }
+        a{
+            display: block;
+        }
+        li:first-child{
+            color: aqua;
+        }
+        li:last-child{
+            color: blue;
+        }
+        li:nth-child(2n){
+            background-color:salmon;
+        }
+        li:nth-child(2n+1){
+            background-color: lightseagreen;
+        }
+        .pseudo-element::before{
+            content: 'Hello: ' ;
+            color: pink;
+            font-size: 50px;
+        }
+        .pseudo-element-af::after{
+            content: ' -After';
+            font-size: 20px;
+            color: teal;
+        }
+        li{
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.google.com/"> Google e jao</a>
+    <a href="https://web.programming-hero.com/"> Google visited</a>
+    <a href="https://web.programming-hero.com/"> pH e jao</a>
+    <a href="https://www.google.com/"> Google e jao</a>
+    <a href="https://www.google.com/"> Bu te jao</a>
+    <a href="https://developer.mozilla.org">this is still unvisiited </a>
+    <a href="https://www.w3schools.com"> CSS Pseudo-elements - W3School te jao</a>
+    <br>
+    <input class="input-focus" type="text" name="" id="">
+    <input type="text" name="" id="">
+    <ol>
+        <li>
+            <p>Rahim</p>
+        </li>
+        <li>
+            <p>karim</p>
+        </li>
+        <li>
+            <p>Jabbar</p>
+        </li>
+        <li>
+            <p>Rafiq</p>
+        </li>
+        <li>
+            <p>Salam</p>
+        </li>
+        <li>
+            <p>Barkat</p>
+        </li>
+        <li>
+            <p>Ajijul</p>
+        </li>
+    </ol>
+    <h1 class="pseudo-element">
+        pseudo element- 1
+    </h1>
+    <h1 class="pseudo-element-af">
+        pseudo element- 2
+    </h1>
+    <h1 class="pseudo-element">
+        pseudo element- 3
+    </h1>
+    <h1 class="pseudo-element-af">
+        pseudo element- 4
+    </h1>
+    <h1 class="pseudo-element-af">
+        pseudo element- 5
+    </h1>
+</body>
+
+</html>
